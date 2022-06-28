@@ -1,5 +1,6 @@
 resource local_file "my-file" {
-  content = random_pet.my-pet.id
+  #content = random_pet.my-pet.id
+  content = "contenido: ${random_pet.my-pet.id}"
   filename             = var.filename
 }
 
