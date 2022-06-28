@@ -1,6 +1,6 @@
 variable prefix {
   type        = string
-  default     = "Hola"
+  default     = "Hello there"
   description = "description"
 }
 
