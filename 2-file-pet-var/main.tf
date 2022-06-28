@@ -1,8 +1,6 @@
-resource local_file name {
+resource local_file "file" {
   content = ${random_pet.my-pet.id}
   filename             = var.filename
-  file_permission      = 0777
-  directory_permission = 0777
 }
 
 
