@@ -1,8 +1,10 @@
-variable filename {
+variable "filename" {
   type        = string
+  description = "filename valor"
 }
 
 
-variable prefix {
+variable "prefix" {
   type        = string
+  description = "prefix valor"
 }
