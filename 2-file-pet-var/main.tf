@@ -1,4 +1,4 @@
-resource local_file "file" {
+resource local_file "my-file" {
   content = ${random_pet.my-pet.id}
   filename             = var.filename
 }
