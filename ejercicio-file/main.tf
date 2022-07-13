@@ -1,6 +1,6 @@
 resource local_file "my-file" {
   content = random_pet.my-pet.id
-  filename             = var.filename
+  filename             = $filename
 
     depends_on = [
     random_pet.my-pet
@@ -12,7 +12,7 @@ resource local_file "my-file" {
 
 resource random_pet "my-pet" {
   length    = 1
-  prefix    = var.prefix
+  prefix    = $prefix
   separator = "  "
 
 }
